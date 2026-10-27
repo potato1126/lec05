@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Lec05Application {
+public class SpringbootSamplesApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(Lec05Application.class, args);
