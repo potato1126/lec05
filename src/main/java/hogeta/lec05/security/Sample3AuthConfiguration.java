@@ -30,7 +30,7 @@ public class Sample3AuthConfiguration {
             .requestMatchers("/sample5/**").authenticated() // /sample5/以下は認証済みであること
             .anyRequest().permitAll()) // 上記以外は全員アクセス可能
         .csrf(csrf -> csrf
-            .ignoringRequestMatchers("/h2-console/*"))
+            .ignoringRequestMatchers("/h2-console/*", "/sample5/**"))
         .headers(headers -> headers
             .frameOptions(frameOptions -> frameOptions
                 .sameOrigin()));
